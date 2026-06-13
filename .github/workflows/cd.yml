@@ -17,9 +17,9 @@ jobs:
           username: ubuntu
           key:      ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/devops-project
+            cd ~/2112197-Devops-Project
             git pull origin main
             cp .env.production .env
-            docker compose -f docker-compose.prod.yml down
-            docker compose -f docker-compose.prod.yml up -d --build
+            sudo docker compose -f docker-compose.prod.yml down
+            sudo docker compose -f docker-compose.prod.yml up -d --build
             echo "Deployed at $(date)"
