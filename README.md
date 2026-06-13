@@ -93,5 +93,6 @@ pytest app/tests/ -v
 ---
 
 Health endpoint configured
+Project architecture documented
 
 *DevOps Fundamentals — Instructor: Afaq Ahmed*
